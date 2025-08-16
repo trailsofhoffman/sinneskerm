@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title }}</title>
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+  <link rel="stylesheet" href="/index.css">
+
+<body>
+  <header>
+    {% assign homePage = collections.paginas | eleventyNavigation | first %}
+    {% assign navPages = collections.paginas | eleventyNavigation | reject: 'order', 0%}    
+    <a href="{{ homePage.url }}"{% if homePage.url == page.url %} aria-current="page"{% endif %}>Sinneskerm</a>
+    <nav>
+        <h2 class="visually-hidden">Top level navigation menu</h2>
+        <ul class="nav">
+        
+        {%- for entry in navPages %}
+            <li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
+        {%- endfor %}
+        </ul>
+    </nav>
+    </header>
+    {{ content }}
+    <script src="js/app.js"></script>
+    <footer>
+      {% assign footerPages = collections.footer | eleventyNavigation %}
+      <nav>
+        <h2 class="visually-hidden">Footer navigation menu</h2>
+        <ul class="nav">
+        {%- for entry in footerPages %}
+          <li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
+        {%- endfor %}
+        </ul>
+      </nav>
+    </footer>
+
+</body>
+
+</html>
