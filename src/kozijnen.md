@@ -9,7 +9,7 @@ eleventyNavigation:
 
 **Complete Woonoplossingen - Harmonie in Stijl en Functionaliteit:**
 
-Bij Jappie's Putsjes Bedriuw bieden we niet alleen hoogwaardige kozijnen, maar ook complete woonoplossingen die naadloos integreren met jouw leefruimte. Combineer jouw kozijnen met elegante raamdecoratie, functionele horren en doordachte zonwering voor een harmonieuze en stijlvolle woonervaring.
+<p>Bij Jappie's Putsjes Bedriuw bieden we niet alleen hoogwaardige kozijnen, maar ook complete woonoplossingen die naadloos integreren met jouw leefruimte. Combineer jouw kozijnen met elegante raamdecoratie, functionele horren en doordachte zonwering voor een harmonieuze en stijlvolle woonervaring.</p>
 
 **Onze Gecoördineerde Woonoplossingen:**
 
@@ -29,4 +29,4 @@ Bij Jappie's Putsjes Bedriuw bieden we niet alleen hoogwaardige kozijnen, maar o
 
 **Neem Contact op voor een Complete Woonadvies:**
 
-Bij Jappie's Putsjes Bedriuw nodigen we je uit om contact met ons op te nemen voor een gepersonaliseerd woonadvies. Ontdek hoe onze gecoördineerde woonoplossingen een meerwaarde kunnen bieden aan jouw leefruimte. Wij staan klaar om jouw woonwensen te vervullen met stijlvolle en functionele oplossingen.
+<p>Bij Jappie's Putsjes Bedriuw nodigen we je uit om contact met ons op te nemen voor een gepersonaliseerd woonadvies. Ontdek hoe onze gecoördineerde woonoplossingen een meerwaarde kunnen bieden aan jouw leefruimte. Wij staan klaar om jouw woonwensen te vervullen met stijlvolle en functionele oplossingen.<p>
