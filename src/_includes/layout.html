@@ -31,8 +31,9 @@
         <ul class="nav">
         
         {%- for entry in navPages %}
-            <li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
+            <li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>            
         {%- endfor %}
+        <li class="nav-item"><a href="#ding"{% if entry.url == page.url %} aria-current="page"{% endif %}>Ding</a></li>
         </ul>
     </nav>
     </header>
@@ -44,7 +45,7 @@
         <h2 class="visually-hidden">Footer navigation menu</h2>
         <ul class="nav">
         {%- for entry in footerPages %}
-          <li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
+          <li class="nav-item"><a href="{{ page.url + "/#" + entry.hash }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
         {%- endfor %}
         </ul>
       </nav>

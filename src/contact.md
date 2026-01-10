@@ -2,6 +2,7 @@
 layout: layout.html
 tags: paginas
 title: Contact met Jappie's Putsjes Bedriuw
+hash: contact
 eleventyNavigation:
   key: Contact
   order: 8
