@@ -2418,3 +2418,11 @@ header {
 	flex-direction: row;
 	align-items: center;
 }
+
+.hero
+{
+	border-radius: var(--br-xl);
+	background-color: #050505;
+	background-image: url("../src/images/20220929_144409-1.jpg");
+	height: 100px;
+}
