@@ -1,0 +1,113 @@
+ 
+
+
+body
+{
+	/* https://modernfontstacks.com/ */
+	font-family: ui-rounded, 'Hiragino Maru Gothic ProN', Quicksand, Comfortaa, Manjari, 'Arial Rounded MT', 'Arial Rounded MT Bold', Calibri, source-sans-pro, sans-serif;
+	font-weight: normal;
+	color: var(--foreground-color-darker);
+}
+
+header {
+	display: flex;
+	gap: 1em;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.nav {
+	display: flex;
+	gap: .5em 1em;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.nav-item {
+	display: inline-block;
+}
+.nav-item a[href]:not(:hover) {
+	text-decoration: none;
+}
+.nav a[href][aria-current="page"] {
+	text-decoration: underline;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+#home
+{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.hero
+{
+	border-radius: var(--br-xl);
+	background-color: lightblue;
+	background-image: url("../src/images/20220929_144409-1.jpg");
+	height: 100px;
+}
+
+.title
+{
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:link#home {
+	text-decoration: none;
+	color: var(--foreground-color-darker);
+  }
+  
+a:visited#home {
+	color: var(--foreground-color-darker);
+  }
+  
+a:hover#home {
+
+  }
+  
+a:active#home {
+
+  }
+
+.content-header {
+	display: grid;
+	grid-template-areas: "hero";
+	align-items: center;
+
+	> * {
+		grid-area: hero;
+	}
+
+	height: 65vh;
+	max-height: 600px;
+	background-color: var(--yellow-8);
+}
+
+img {
+	object-fit: cover;
+	object-position: 5vw -5vmin;
+	height: min(65vh, 600px);
+	width: 60%;
+	justify-self: end;
+  }
+
+  .hero-content {
+	margin-left: 5%;
+	max-width: 35%;
+	min-width: 30ch;
+  }

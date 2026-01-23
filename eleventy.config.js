@@ -6,9 +6,10 @@ export default async function (eleventyConfig)
 	eleventyConfig.setInputDirectory("./src/");
 	eleventyConfig.setOutputDirectory("./dist/");
 	eleventyConfig.addPlugin(eleventyNavigationPlugin);
-	eleventyConfig.addPlugin(eleventyImageTransformPlugin);
-	eleventyConfig.addWatchTarget("css/**/*.css");
-	eleventyConfig.addPassthroughCopy( { "css/index.css": "index.css"});
+	//eleventyConfig.addPlugin(eleventyImageTransformPlugin);
+	eleventyConfig.addWatchTarget("src/css/**/*.css");
+	//eleventyConfig.addPassthroughCopy( { "css/index.css": "index.css"});
+	eleventyConfig.addPassthroughCopy("src/images");
 
 };
 
